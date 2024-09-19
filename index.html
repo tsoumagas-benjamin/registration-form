@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <!-- <script src="form.js"></script> -->
+    <title>Party Planning Form</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="name">Company Name:</label>
+        <input type="text" id="name" name="name" required
+        placeholder="FunCorp Inc."><br><br>
+
+        <label for="mail">Email Address:</label>
+        <input type="email" id="mail" name="mail" required
+        placeholder="funcorp@gmail.com"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+        placeholder="123-456-7890"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required><br><br>
+
+        <fieldset>
+            <legend>Party Size:</legend>
+            <label><input type="radio" name="party" value="tiny" required> 1-10</label>
+            <label><input type="radio" name="party" value="small"> 10-50</label>
+            <label><input type="radio" name="party" value="medium"> 50-100</label>
+            <label><input type="radio" name="party" value="large"> 100+</label>
+        </fieldset><br>
+
+        <label for="event">Event Date:</label>
+        <input type="date" id="event" name="event"><br><br>
+
+        <label><input type="checkbox" name="contact" required> 
+            I agree for FunCorp to contact me for further planning
+        </label><br><br>
+
+        <label><input type="checkbox" name="allergy"> 
+            My guests have a tree nut allergy
+        </label><br><br>
+
+        <button type="submit">Register</button>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,8 @@
+button,
+fieldset,
+input{
+  font-family: inherit;
+  font-size: 100%;
+  margin-left: 5px;
+  box-sizing: border-box;
+}
